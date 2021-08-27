@@ -64,11 +64,7 @@ li{
     display: none;
 }
 
-#bars{
-    font-size: 25px;
-    cursor: pointer;
 
-}
 
 
 main{
@@ -309,7 +305,7 @@ footer h1{
     color: rgb(4, 87, 240);
 }
 
-#bar-container{
+.bar-container{
     display: none;
 }
 
@@ -415,6 +411,16 @@ footer h1{
     }
     h2{
         font-size: 35px;
+    }
+    
+    #bars{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+    .bars{
+        transform: rotate(180deg);
+        transition-duration: .5s;
     }
 
     .btn{
