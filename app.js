@@ -27,9 +27,26 @@ const medConImgEl = document.querySelector('.medConImg')
 
 // for desktop
 
+let touch = false
+
 barBtn.addEventListener('click', ()=>{
     const barCon = document.querySelector('.bar-container')
+    const icon = document.querySelector('#bars')
+    const iconAnim = document.querySelector('.media')
     barCon.classList.toggle('hidden1')
+
+    
+    if (!touch) {
+        icon.classList.remove('fa-bars')
+        icon.classList.add('fa-times')
+    } else if (touch) {
+        icon.classList.remove('fa-times')
+        icon.classList.add('fa-bars')
+    }
+    
+    touch = !touch
+    iconAnim.classList.toggle('bars')
+
 })
 
 proBtn.addEventListener('click', ()=>{
